@@ -18,9 +18,6 @@ char tag5[13] = "";
 String appEui = "";
 String appKey = "";
 
-//#include "arduino_secrets.h"
-// please enter your sensitive data in the Secret tab or arduino_secrets.h
-
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(115200);
