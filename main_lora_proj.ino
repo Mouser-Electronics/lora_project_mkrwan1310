@@ -11,8 +11,6 @@ int count;
 char tag1[13] = "";
 char tag2[13] = "";
 char tag3[13] = "";
-char tag4[13] = "";
-char tag5[13] = "";
 
 // insert your info
 String appEui = "";
@@ -71,15 +69,11 @@ void loop() {
 
     // compare tag information with dataset and replace names
     if (compareTag(buffer, tag1)) {
-      employee_name = "John";
+      employee_name = "";
     } else if(compareTag(buffer, tag2)) {
-      employee_name = "Sarah";
+      employee_name = "";
     } else if(compareTag(buffer, tag3)) {
-      employee_name = "Nora";
-    } else if(compareTag(buffer, tag4)) {
-      employee_name = "Jennifer";
-    } else if(compareTag(buffer, tag5)) {
-      employee_name = "Paul";
+      employee_name = "";
     } else {
       Serial.println("Error - unknown rfid tag");
     }
